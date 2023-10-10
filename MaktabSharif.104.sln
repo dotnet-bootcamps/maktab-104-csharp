@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S03-CSharp-Loops", "S03-CSh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S03-Methods", "S03-Methods\S03-Methods.csproj", "{9BC46402-18BE-4D6E-9127-A7E5F84109A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S04-OOP", "S04-OOP\S04-OOP.csproj", "{1D1FB3D9-AC03-46FA-A650-74BC6B6AB7B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9BC46402-18BE-4D6E-9127-A7E5F84109A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC46402-18BE-4D6E-9127-A7E5F84109A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BC46402-18BE-4D6E-9127-A7E5F84109A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1FB3D9-AC03-46FA-A650-74BC6B6AB7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1FB3D9-AC03-46FA-A650-74BC6B6AB7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1FB3D9-AC03-46FA-A650-74BC6B6AB7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1FB3D9-AC03-46FA-A650-74BC6B6AB7B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
