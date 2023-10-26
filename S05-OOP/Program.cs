@@ -1,20 +1,71 @@
-﻿using S05_OOP.Codes.Vehicle;
+﻿
+using S04_OOP.SampleClasses;
 
 
 
-//var vehicle = new VehicleBase();
-//vehicle._name = "";
+/*
+ * Letter Case
+ *
+ * camelCase    ===== iAmMahmoud,   tempAgeOfCompany
+ * PascalCase   ===== IAmMahmoud,   TempAgeOfCompany
+ * kebab-case   ===== i-am-mahmoud,   temp-age-of-company
+ * Snake_Case   ===== I_Am_Mahmoud,   Temp_Age_Of_Company
+ *
+ * Naming Rule
+ * Naming Convention
+ *
+ */
 
-var car = new Car();
-car._model = "";
-car._capacity = 5;
-car.IncreaseSpeed(1000);
-car.Start();
+int a = new int();
+a = 5;
 
-var bicycle=new Bicycle();
-bicycle._capacity = 1;
-bicycle.Start();
-bicycle.Stop();
+int age = 5;
 
 
-//Console.WriteLine("Hello, World!");
+string name1 = new string("hasan");
+string name = "hasan";
+
+
+var pride = new Car();
+pride.color = "red";
+pride.engineNumber = "515215150";
+pride.vin = "2510518515";
+
+
+Console.WriteLine("Car Name " + Car.name);
+Car.name = "hasan";
+Console.WriteLine("Car Name " + Car.name);
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine("Vin Number " + pride.vin);
+pride.vin = "33333333333";
+Console.WriteLine("Vin Number " + pride.vin);
+
+/*
+ * Types
+ *  Primitive   Types (int, string, bool, ...)
+ *  Pre-Define  Types (object, ...)
+ *  User-Define Types (car, Student, University, ...)
+ * 
+ * Types (Class, Struct, Interface, Record, ...)
+ * 
+ * Class Members
+ *      Method, Constructor, Fields, Properties, ...
+ *
+ * Static Members
+ *
+ * Access Modifiers
+ *
+ *
+ */
+
+
+/*
+ * OOP
+ *
+ *  Inheritance
+ *  Polymophysm
+ *  Encapsoulation
+ *  Abstraction
+ */

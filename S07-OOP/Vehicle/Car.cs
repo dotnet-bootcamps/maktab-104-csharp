@@ -13,19 +13,19 @@ namespace S06_OOP.Vehicle
         public Car()
         {
             nameCar = "pride";
-            _model = "pride";
+            //_model = "pride";
         }
 
-        public Car(string model)
-        {
-            _model = model;
-        }
+        //public Car(string model)
+        //{
+        //    _model = model;
+        //}
 
-        public Car(string model, string year)
-        {
-            _model = model;
-            _year = year;
-        }
+        //public Car(string model, string year)
+        //{
+        //    _model = model;
+        //    _year = year;
+        //}
 
 
         public override void IncreaseSpeed(int kph)

@@ -1,25 +1,20 @@
-﻿
-using S06_OOP.Food;
-using S06_OOP.Vehicle;
-
-Console.WriteLine("Hello, World!");
-
-//Car myCar1 = new Car();
-//Console.WriteLine($"my car 1 model : {myCar1._model}");
+﻿using S05_OOP.Codes.Vehicle;
 
 
 
-Car myCar2 = new Car("Ford");
-Console.WriteLine($"my car 2 model : {myCar2._model}, year: {myCar2._year}");
+//var vehicle = new VehicleBase();
+//vehicle._name = "";
+
+var car = new Car();
+car._model = "";
+car._capacity = 5;
+car.IncreaseSpeed(1000);
+car.Start();
+
+var bicycle=new Bicycle();
+bicycle._capacity = 1;
+bicycle.Start();
+bicycle.Stop();
 
 
-
-//Car myCar3 = new Car("BMW",2023);
-
-
-var bandari = new Sandwich("bandari");
-
-var normal = new Sandwich("");
-
-
-Console.ReadLine();
+//Console.WriteLine("Hello, World!");

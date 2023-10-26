@@ -48,8 +48,46 @@ namespace S08_Files.Utilities.FileHandling
             Console.WriteLine($"---TotalSize          : {driveInfo.TotalSize}");
 
             Console.WriteLine("\n\n");
+
+
+            //driveInfo.VolumeLabel = "hasan";
         }
 
 
+        public void ShowListOfDirectories(string path)
+        {
+
+            var dirs = Directory.GetDirectories(path);
+
+            Console.WriteLine($"List Of Directories In Drive : {path}");
+            Console.WriteLine("-------------------------------------");
+
+            foreach (var dir in dirs)
+            {
+                Console.WriteLine(dir);
+                Console.WriteLine("-----------------------------");
+
+                Console.WriteLine();
+            }
+        }
+
+
+        public void SearchInDirectory(string path, string searchPattern)
+        {
+            var result = Directory.GetDirectories(path, searchPattern);
+            
+            Console.WriteLine($"List Of Directories In Drive : {path}");
+            Console.WriteLine("-------------------------------------");
+
+            foreach (var dir in result)
+            {
+                Console.WriteLine(dir);
+                Console.WriteLine("-----------------------------");
+
+                Console.WriteLine();
+            }
+        }
+
+        
     }
 }
