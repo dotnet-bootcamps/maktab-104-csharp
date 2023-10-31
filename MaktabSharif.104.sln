@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S09-Files-ImportExportCsv",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S09-Files", "S09-Files\S09-Files.csproj", "{DB7F2175-C708-4BF6-BC31-028683F4157E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S10-ExceptionHandling", "S10-ExceptionHandling\S10-ExceptionHandling.csproj", "{88AEB19D-2E0D-4001-ABD1-01C1F470D071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S10-Exceptions-Examples", "S10-Exceptions-Examples\S10-Exceptions-Examples.csproj", "{E392AC2B-9F45-496E-BEF5-4A5C60EA0192}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{DB7F2175-C708-4BF6-BC31-028683F4157E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB7F2175-C708-4BF6-BC31-028683F4157E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB7F2175-C708-4BF6-BC31-028683F4157E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88AEB19D-2E0D-4001-ABD1-01C1F470D071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88AEB19D-2E0D-4001-ABD1-01C1F470D071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88AEB19D-2E0D-4001-ABD1-01C1F470D071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88AEB19D-2E0D-4001-ABD1-01C1F470D071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E392AC2B-9F45-496E-BEF5-4A5C60EA0192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E392AC2B-9F45-496E-BEF5-4A5C60EA0192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E392AC2B-9F45-496E-BEF5-4A5C60EA0192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E392AC2B-9F45-496E-BEF5-4A5C60EA0192}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
