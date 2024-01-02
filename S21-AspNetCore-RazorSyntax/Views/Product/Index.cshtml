@@ -18,7 +18,7 @@
             <td>@product.Brand</td>
             <td>@product.Price</td>
 
-            <td><a class="btn-sm btn-info" asp-controller="Product" asp-action="Details" asp-route-id="5">مشاهده جزئیات</a></td>
+            <td><a class="btn-sm btn-info" asp-controller="Product" asp-action="Details" asp-route-id="@product.Id">مشاهده جزئیات</a></td>
 
             <td><a class="btn-sm btn-warning" asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id">ویرایش</a></td>
 

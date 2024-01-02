@@ -6,30 +6,7 @@ namespace S21_AspNetCore_RazorSyntax.Controllers
 {
     public class ProductController : Controller
     {
-        List<Product> products = new List<Product>
-        {
-            new Product
-            {
-                Id = 1,
-                Brand = "Microsoft",
-                Name = "Surface",
-                Price = 1000
-            },
-            new Product
-            {
-                Id = 2,
-                Brand = "Dell",
-                Name = "XPS",
-                Price = 1000
-            },
-            new Product
-            {
-                Id = 3,
-                Brand = "HP",
-                Name = "ZBOOK",
-                Price = 1000
-            }
-        };
+        private static List<Product> products = new List<Product>();
 
         [HttpGet]
         public IActionResult Index()
@@ -63,7 +40,7 @@ namespace S21_AspNetCore_RazorSyntax.Controllers
             var product = products.FirstOrDefault(w => w.Id == id);
             return View(product);
         }
-
+        
         [HttpPost]
         public IActionResult Edit(Product model)
         {
