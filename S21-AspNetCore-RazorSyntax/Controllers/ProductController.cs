@@ -50,5 +50,16 @@ namespace S21_AspNetCore_RazorSyntax.Controllers
             product.Price = model.Price;
             return RedirectToAction("Index");
         }
+
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var product = products.FirstOrDefault(w => w.Id == id);
+            products.Remove(product);
+            return RedirectToAction("Index");
+        }
+
+        
     }
 }
