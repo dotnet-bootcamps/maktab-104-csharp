@@ -1,5 +1,8 @@
 ﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
 @model List<S23_AspNetCore_RazorViewEngine.Models.Entities.Product>
+@{
+    Layout = "_AdminLayout";
+}
 
 <h1>لیست محصولات</h1>
 <a class="btn-sm btn-success" asp-controller="Product" asp-action="Create">محصول جدید</a>
