@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using S22_AspNetCore_InMemeoryDb.Models;
+using S22_AspNetCore_InMemeoryDb.Models.ViewModel;
 
 namespace S22_AspNetCore_InMemeoryDb.Controllers
 {

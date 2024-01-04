@@ -1,0 +1,31 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model S23_AspNetCore_RazorViewEngine.Models.Entities.Product
+
+<h2 class="mb-5">
+    ویرایش
+    @Model.Name
+</h2>
+
+<form class="border border-1 p-5" asp-controller="Product" asp-action="Edit" method="post">
+    <div class="mb-3">
+        <label class="form-label" asp-for="Id"></label>
+        <input class="form-control" asp-for="Id" readonly />
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Brand"></label>
+        <input class="form-control" asp-for="Brand" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Price"></label>
+        <input class="form-control" asp-for="Price" />
+    </div>
+
+    <input type="submit" class="btn btn-success" value="ذخیره" />
+
+    <a class="btn btn-outline-secondary"
+       asp-controller="Product" asp-action="Index">بازگشت</a>
+</form>
