@@ -16,6 +16,8 @@ namespace S23_AspNetCore_RazorViewEngine.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            ViewBag.TarikheEmrooz = DateTime.Now;
+
             return View(_database.GetProducts());
         }
 
