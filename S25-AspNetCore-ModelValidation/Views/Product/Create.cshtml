@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model S25_AspNetCore_ModelValidation.Models.Entities.Product
+
+<h2 class="mb-5">
+    تعریف محصول جدید
+</h2>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form class="border border-1 p-5" asp-controller="Product" asp-action="Create" method="post">
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="Id"></label>
+        <input class="form-control" asp-for="Id" />
+        <span asp-validation-for="Id" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Brand"></label>
+        <input class="form-control" asp-for="Brand" />
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Price"></label>
+        <input class="form-control" asp-for="Price" type="number" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <input type="submit" class="btn btn-success" value="ذخیره" />
+
+    <a class="btn btn-outline-secondary"
+       asp-controller="Product" asp-action="Index">بازگشت</a>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial"/>
+}
