@@ -9,8 +9,8 @@ Console.WriteLine("Hello, World!");
 
 
 
-Car myCar2 = new Car("Ford");
-Console.WriteLine($"my car 2 model : {myCar2._model}, year: {myCar2._year}");
+//Car myCar2 = new Car("Ford");
+//Console.WriteLine($"my car 2 model : {myCar2._model}, year: {myCar2._year}");
 
 
 
