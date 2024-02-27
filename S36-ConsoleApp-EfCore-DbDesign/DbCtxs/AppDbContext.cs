@@ -11,12 +11,18 @@ namespace S36_ConsoleApp_EfCore_DbDesign.DbCtxs
     public class AppDbContext : DbContext
     {
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("server=(LocalDb)\\MSSQLLocalDB; Initial Catalog=MaktabSharif-104-Blog; Integrated Security=True;");
             base.OnConfiguring(optionsBuilder);
         }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
 
         public DbSet<Post> Posts { get; set; }
         public DbSet<User> Users { get; set; }
