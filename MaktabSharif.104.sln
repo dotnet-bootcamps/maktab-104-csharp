@@ -53,15 +53,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S25-AspNetCore-ModelValidat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-data-Ado-Dapper", "05-data-Ado-Dapper", "{6637D80A-6ED4-48B4-9FB0-CE3FB2BDCCF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S33-ConsoleApp-Ado", "S33-ConsoleApp-Ado\S33-ConsoleApp-Ado.csproj", "{AA9694D0-1D92-471F-BCB1-045B02C95963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S33-ConsoleApp-Ado", "S33-ConsoleApp-Ado\S33-ConsoleApp-Ado.csproj", "{AA9694D0-1D92-471F-BCB1-045B02C95963}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S33-ConsoleApp-Dapper", "S33-ConsoleApp-Dapper\S33-ConsoleApp-Dapper.csproj", "{CBC6307C-9476-4B50-B223-1BD379185F05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S33-ConsoleApp-Dapper", "S33-ConsoleApp-Dapper\S33-ConsoleApp-Dapper.csproj", "{CBC6307C-9476-4B50-B223-1BD379185F05}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-data-EfCore", "06-data-EfCore", "{03655059-AB61-400D-958C-1453D628836F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S34-ConsoleApp-EfCore-Intro", "S34-ConsoleApp-EfCore-Intro\S34-ConsoleApp-EfCore-Intro.csproj", "{4F988ABC-4ECF-442F-A6C0-426D937F58EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S34-ConsoleApp-EfCore-Intro", "S34-ConsoleApp-EfCore-Intro\S34-ConsoleApp-EfCore-Intro.csproj", "{4F988ABC-4ECF-442F-A6C0-426D937F58EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-OOP", "01-OOP", "{5D95C19F-EBA7-4648-852B-83A5BE5CA8ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S36-ConsoleApp-EfCore-DbDesign", "S36-ConsoleApp-EfCore-DbDesign\S36-ConsoleApp-EfCore-DbDesign.csproj", "{5572D52D-7F8C-487F-A219-21D331BF025D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -161,6 +163,10 @@ Global
 		{4F988ABC-4ECF-442F-A6C0-426D937F58EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F988ABC-4ECF-442F-A6C0-426D937F58EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F988ABC-4ECF-442F-A6C0-426D937F58EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5572D52D-7F8C-487F-A219-21D331BF025D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5572D52D-7F8C-487F-A219-21D331BF025D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5572D52D-7F8C-487F-A219-21D331BF025D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5572D52D-7F8C-487F-A219-21D331BF025D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,6 +195,7 @@ Global
 		{AA9694D0-1D92-471F-BCB1-045B02C95963} = {6637D80A-6ED4-48B4-9FB0-CE3FB2BDCCF4}
 		{CBC6307C-9476-4B50-B223-1BD379185F05} = {6637D80A-6ED4-48B4-9FB0-CE3FB2BDCCF4}
 		{4F988ABC-4ECF-442F-A6C0-426D937F58EC} = {03655059-AB61-400D-958C-1453D628836F}
+		{5572D52D-7F8C-487F-A219-21D331BF025D} = {03655059-AB61-400D-958C-1453D628836F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FCDFEFD8-BE1B-463F-8882-9C85034608A3}
