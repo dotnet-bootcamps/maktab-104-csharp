@@ -15,6 +15,7 @@ namespace S36_ConsoleApp_EfCore_DbDesign.Entities
         public int AutherId { get; set; }
 
         public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt1 { get; set; }
         //public int LikeId { get; set; }
         //public List<Like> Likes { get; set; }
     }
