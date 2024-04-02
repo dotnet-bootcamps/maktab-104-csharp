@@ -1,6 +1,7 @@
 using S40_AspNetCore_DI.Contracts;
 using S40_AspNetCore_DI.Domain;
 using S40_AspNetCore_DI.Infrastructures;
+using S40_AspNetCore_DI.Models.LifeTimeDemo;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,11 @@ builder.Services.AddScoped<MessageCreator>();
 // Contract
 //builder.Services.AddScoped<IStudentRepository, StudentInMemoryRepository>();
 builder.Services.AddScoped<IStudentRepository, StudentEfRepository>();
+
+
+builder.Services.AddSingleton<ISingletonService, SingletonService>();
+builder.Services.AddScoped<IScopedService, ScopedService>();
+builder.Services.AddTransient<ITransientService, TransientService>();
 
 
 var app = builder.Build();

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using S40_AspNetCore_DI.Models;
 using System.Diagnostics;
 using S40_AspNetCore_DI.Domain;
+using S40_AspNetCore_DI.Models.LifeTimeDemo;
 
 namespace S40_AspNetCore_DI.Controllers
 {
@@ -10,7 +11,9 @@ namespace S40_AspNetCore_DI.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly MessageCreator messageCreator;
 
-        public HomeController(ILogger<HomeController> logger, MessageCreator creator)
+        public HomeController(
+            ILogger<HomeController> logger, 
+            MessageCreator creator)
         {
             _logger = logger;
             messageCreator = creator;
