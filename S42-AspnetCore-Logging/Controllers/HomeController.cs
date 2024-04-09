@@ -9,11 +9,15 @@ namespace S42_AspnetCore_Logging.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
+        private readonly SiteSettings _siteSettings;
 
-        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
+        public HomeController(ILogger<HomeController> logger, 
+            IConfiguration configuration,
+            SiteSettings siteSettings)
         {
             _logger = logger;
             _configuration = configuration;
+            _siteSettings = siteSettings;
 
             logger.LogInformation("This is a log from {provider} in {bootcamp}", "seq", "maktab-104");
 
@@ -27,7 +31,15 @@ namespace S42_AspnetCore_Logging.Controllers
 
         public IActionResult Index()
         {
+            var a = _siteSettings.SeqSettings.Address;
+
+
             var appName = _configuration["AppName"];
+            var logCategory = _configuration["Logging:LogLevel:Microsoft.AspNetCore"];
+
+            var logSection = _configuration.GetSection("Logging").GetSection("LogLevel");
+            
+            var defaultXConnectionString1 = _configuration["ConnectionStrings:Default"];
             var defaultXConnectionString = _configuration.GetConnectionString("Default");
             return View("Index", appName);
         }

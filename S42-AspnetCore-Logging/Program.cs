@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using S42_AspnetCore_Logging.InfrastructureCode;
 using Serilog;
 using Serilog.Events;
 
@@ -16,6 +17,21 @@ var builder = WebApplication.CreateBuilder(args);
 
 //});
 
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    //.AddXmlFile("AppSettings.xml")
+    //.AddXmlFile("AppSettings.xml")
+    .AddJsonFile("AppSettings-serilog.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"AppSettings-serilog.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange:true)
+    //.AddEnvironmentVariables()
+    //.AddCommandLine(args)
+    ;
+
+
+//var settings = builder.Configuration.GetSection("SiteSettings").Get<SiteSettings>();
+
+builder.Services.AddSingleton(builder.Configuration.GetSection("SiteSettings").Get<SiteSettings>());
+
 
 builder.Host.ConfigureLogging(loggingBuilder =>
 {
@@ -23,6 +39,7 @@ builder.Host.ConfigureLogging(loggingBuilder =>
 })
     .UseSerilog((context, configs) =>
     {
+        //configs.ReadFrom.Configuration(builder.Configuration);
         configs.Enrich.WithThreadId();
         configs.Enrich.WithEnvironmentName();
         configs.WriteTo.Console();
